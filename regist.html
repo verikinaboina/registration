@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .reg-form {
+            margin-top: 10px;
+        }
+        table,
+        thead,
+        tbody,
+        tr,
+        td {
+            border: 1px solid;
+        }
+    </style>
+    <title>Registration</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div style="text-align: center; background-color: bisque;">
+        <h2 class="reg-form">Registration</h2>
+        <form id="form">
+            <label for="empId">Employee Id </label>
+                <input type="text" name="empId" class="reg-form"><br />
+            <label for="name">Employee name</label>
+                <input type="text" name="name" class="reg-form"><br />
+            <label for="age">Age </label>
+                <input type="text" name="age" class="reg-form"><br />
+            <label for="emailId">email</label>
+                <input type="text" name="emailId" class="reg-form"><br />
+            <button type="submit">submit</button>
+        </form>
+        <output id="output"> Data:</output>
+        <!-- empId: req.body.empId,
+        name: req.body.name,
+        age: req.body.age,
+        email: req.body.email -->
+
+        <table>Table:
+            <thead class="table-border">
+                <tr class="">
+                    <td aria-colspan="1">Name</td>
+                    <td aria-colspan="1">Age</td>
+                    <td aria-colspan="1">Email</td>
+                </tr>
+            </thead>
+            <tbody id="empTable" style="text-align: center;"> </tbody>
+        </table>
+    </div>
+    <script type="text/javascript" src="reg.js"></script>
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+</body>
+
+</html>

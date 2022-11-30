@@ -1,0 +1,21 @@
+{
+  "name": "registration",
+  "version": "1.0.0",
+  "description": "registration",
+  "main": "reg.js",
+  "type": "module",
+  "module": "CommonJS",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "no"
+  },
+  "author": "venkata",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.2.0",
+    "live-server": "^1.2.2"
+  }
+}
